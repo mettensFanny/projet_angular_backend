@@ -29,6 +29,13 @@ function postAssignment(req, res){
     assignment.dateDeRendu = req.body.dateDeRendu;
     assignment.rendu = req.body.rendu;
 
+    //ajout propriétés assignment
+    assignment.remarques = req.body.remarques;
+    assignment.note = req.body.note;
+    assignment.matiere = req.body.matiere;
+    assignment.auteur = req.body.auteur;
+
+
     console.log("POST assignment reçu :");
     console.log(assignment)
 
